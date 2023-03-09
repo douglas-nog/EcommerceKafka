@@ -1,11 +1,8 @@
 package br.com.alura.ecommerce;
 
 import java.time.Duration;
-import java.util.Collections;
 import java.util.Properties;
 import java.util.regex.Pattern;
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
