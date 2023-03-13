@@ -3,6 +3,9 @@
 	<groupId>br.com.alura</groupId>
 	<artifactId>ecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>ecommerce</name>
+	<url>http://maven.apache.org</url>
 
 	<build>
 		<plugins>
@@ -41,4 +44,13 @@
 
 
 	</dependencies>
+	<modules>
+		<module>Service_email</module>
+		<module>ServiceFraudDetector</module>
+		<module>ServiceEmail</module>
+		<module>ServiceFraudDetecot</module>
+		<module>ServiceLog</module>
+		<module>ServiceNewOrder</module>
+		<module>CommonKafka</module>
+	</modules>
 </project>
