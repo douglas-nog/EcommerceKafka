@@ -10,7 +10,7 @@
         <module name="ServiceEmail" />
         <module name="ServiceLog" />
         <module name="CommonKafka" />
-        <module name="ServiceFraudDetecot" />
+        <module name="ServiceFraudDetector" />
       </profile>
     </annotationProcessing>
   </component>

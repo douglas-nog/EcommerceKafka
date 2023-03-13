@@ -45,10 +45,10 @@
 
 	</dependencies>
 	<modules>
-		<module>Service_email</module>
+		<module>ServiceEmail</module>
 		<module>ServiceFraudDetector</module>
 		<module>ServiceEmail</module>
-		<module>ServiceFraudDetecot</module>
+		<module>ServiceFraudDetector</module>
 		<module>ServiceLog</module>
 		<module>ServiceNewOrder</module>
 		<module>CommonKafka</module>
