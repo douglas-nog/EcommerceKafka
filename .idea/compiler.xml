@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ServiceNewOrder" />
+        <module name="ServiceEmailApproved" />
+        <module name="CommonKafka" />
+        <module name="ServiceUsers" />
         <module name="ServiceEmail" />
         <module name="ServiceLog" />
-        <module name="CommonKafka" />
         <module name="ServiceFraudDetector" />
-        <module name="ServiceUsers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

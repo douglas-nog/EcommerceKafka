@@ -53,5 +53,6 @@
 		<module>ServiceNewOrder</module>
 		<module>CommonKafka</module>
 		<module>ServiceUsers</module>
-	</modules>
+        <module>ServiceEmailApproved</module>
+    </modules>
 </project>
