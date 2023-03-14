@@ -52,5 +52,6 @@
 		<module>ServiceLog</module>
 		<module>ServiceNewOrder</module>
 		<module>CommonKafka</module>
+		<module>ServiceUsers</module>
 	</modules>
 </project>

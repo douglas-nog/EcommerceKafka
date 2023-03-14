@@ -11,7 +11,12 @@
         <module name="ServiceLog" />
         <module name="CommonKafka" />
         <module name="ServiceFraudDetector" />
+        <module name="ServiceUsers" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ServiceUSer" target="17" />
+      <module name="ServiceUser" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
