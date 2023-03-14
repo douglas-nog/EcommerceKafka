@@ -54,5 +54,6 @@
 		<module>CommonKafka</module>
 		<module>ServiceUsers</module>
         <module>ServiceEmailApproved</module>
+        <module>ServiceHttp</module>
     </modules>
 </project>

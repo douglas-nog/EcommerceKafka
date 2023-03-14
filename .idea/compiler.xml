@@ -13,6 +13,7 @@
         <module name="ServiceEmail" />
         <module name="ServiceLog" />
         <module name="ServiceFraudDetector" />
+        <module name="ServiceHttp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
