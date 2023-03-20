@@ -4,9 +4,8 @@ import java.math.BigDecimal;
 
 public class Order {
 
-	@SuppressWarnings("unused")
+
 	private final String orderId;
-	@SuppressWarnings("unused")
 	private final BigDecimal amount;
 	private final String email;
 

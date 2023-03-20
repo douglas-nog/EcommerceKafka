@@ -20,7 +20,7 @@ public class LogService {
 		}
 	}
 
-	public void parse(ConsumerRecord<String, String> record) {
+	public void parse(ConsumerRecord<String, Message<String>> record) {
 		System.out.println("------------------------------------------");
 		System.out.println("LOG " + record.topic());
 		System.out.println(record.key());

@@ -18,10 +18,14 @@ public class NewOrder {
 					//I used the random math  just to simulate creating an email
 
 					var order = new Order(orderId, amount, email);
-					orderDispatcher.send("ECOMMERCE_NEW_ORDER", email, order);
+					orderDispatcher.send("ECOMMERCE_NEW_ORDER", email,
+							new CorrelationId(NewOrder.class.getSimpleName()),
+							order);
 
 					var emailCode = "Thak you for your order! We are processing your order!";
-					emailDispatcher.send("ECOMMERCE_SEND_EMAIL", email, emailCode);
+					emailDispatcher.send("ECOMMERCE_SEND_EMAIL", email,
+							new CorrelationId(NewOrder.class.getSimpleName()),
+							emailCode);
 				}
 			}
 		}

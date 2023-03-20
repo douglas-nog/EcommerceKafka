@@ -55,5 +55,6 @@
 		<module>ServiceUsers</module>
         <module>ServiceEmailApproved</module>
         <module>ServiceHttp</module>
+        <module>ServiceReadingReport</module>
     </modules>
 </project>

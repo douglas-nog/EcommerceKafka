@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ExecutionException;
 
 public class CreateUserService {
 
@@ -36,11 +37,11 @@ public class CreateUserService {
         }
     }
 
-    private void parse(ConsumerRecord<String, Order> record) throws SQLException {
+    private void parse(ConsumerRecord<String, Message<Order>> record) throws SQLException {
         System.out.println("------------------------------------------");
         System.out.println("Processing new order, checking for new user");
         System.out.println(record.value());
-        var order = record.value();
+        var order = record.value().getPayload();
         if(isNewUser(order.getEmail())) {
             insertNewUser(order.getEmail());
         }
@@ -52,7 +53,7 @@ public class CreateUserService {
         insert.setString(1, UUID.randomUUID().toString());
         insert.setString(2, email);
         insert.execute();
-        System.out.println("Usuário: " + email + " \nCadastrado com sucesso!");
+        System.out.println("Usuário uuid e " + email + " adicionado");
     }
 
     private boolean isNewUser(String email) throws SQLException {
