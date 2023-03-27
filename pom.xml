@@ -56,5 +56,8 @@
         <module>ServiceEmailApproved</module>
         <module>ServiceHttp</module>
         <module>ServiceReadingReport</module>
-    </modules>
+        <module>ServiceEmailNewOrder</module>
+		<module>ServiceEmailNewOrder</module>
+		<module>ServiceEmailNewOrder</module>
+	</modules>
 </project>

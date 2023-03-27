@@ -12,6 +12,7 @@
         <module name="CommonKafka" />
         <module name="ServiceUsers" />
         <module name="ServiceEmail" />
+        <module name="ServiceEmailNewOrder" />
         <module name="ServiceLog" />
         <module name="ServiceFraudDetector" />
         <module name="ServiceHttp" />

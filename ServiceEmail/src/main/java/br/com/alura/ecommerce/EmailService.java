@@ -4,6 +4,7 @@ package br.com.alura.ecommerce;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
+import br.com.alura.ecommerce.consumer.KafkaService;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -12,7 +13,7 @@ public class EmailService {
 
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		var emailService = new EmailService();
-		try (var service = new KafkaService<>(EmailService.class.getSimpleName(), 
+		try (var service = new KafkaService<>(EmailService.class.getSimpleName(),
 				"ECOMMERCE_SEND_EMAIL",
 				emailService::parse,
 				Map.of(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName()))) {

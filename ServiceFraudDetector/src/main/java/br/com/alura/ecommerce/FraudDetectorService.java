@@ -4,13 +4,14 @@ import java.math.BigDecimal;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
+import br.com.alura.ecommerce.consumer.KafkaService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 public class FraudDetectorService {
 
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		var fraudService = new FraudDetectorService();
-		try (var service = new KafkaService<>(FraudDetectorService.class.getSimpleName(), 
+		try (var service = new KafkaService<>(FraudDetectorService.class.getSimpleName(),
 				"ECOMMERCE_NEW_ORDER",
 				fraudService::parse,
 				Map.of())) {
